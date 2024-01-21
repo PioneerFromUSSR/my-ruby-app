@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  db:
+    image: mariadb:10.11.2
+    environment:
+      - MYSQL_DATABASE=app
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - 3306:3306
